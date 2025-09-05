@@ -1,10 +1,4 @@
-!pip install numpy pandas scikit-learn
-
-import numpy as np
-import pandas as pd
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+# No need for: !pip install numpy pandas scikit-learn
 
 import random
 
@@ -52,7 +46,7 @@ scores = {"I":0, "E":0, "S":0, "N":0, "T":0, "F":0, "J":0, "P":0}
 print("🤖 Hey there! Let’s play a game — I’ll ask you fun questions and guess your MBTI type!\n")
 random.shuffle(questions)
 
-# Ask 10 random questions (you can change to 30 if you want full test)
+# Ask 25 random questions (can change to 30 for full test)
 for q, first_trait, second_trait in questions[:25]:
     answer = input(q + " (type the first option or second option): ").strip().lower()
     if answer.startswith("first") or answer in ["yes", first_trait.lower()]:
