@@ -266,9 +266,9 @@ elif st.session_state.stage == "results":
     st.write(f"### 🌟 Strengths: {', '.join(info['strengths'])}")
     st.write(f"### 😬 Weaknesses: {', '.join(info['weaknesses'])}")
 
-    st.markdown("### 💡 Advice from your M-Persona:")
-    for tip in info['advice']:
-        st.write(f"- {tip}")
+    #st.markdown("### 💡 Advice from your M-Persona:")
+    #for tip in info['advice']:
+        #st.write(f"- {tip}")
 
     st.success("You can now chat with your M-Persona about your weaknesses below ⬇️")
 
